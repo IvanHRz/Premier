@@ -1,0 +1,115 @@
+Premier 
+
+
+-----------------------------------------------------Ingesta---------------------------------------------------- 
+importacion con metodologia mas especializada 
+1.-Menu - File - Project Settings- ingest settings 
+
+2.- Activar ingesta
+   2.1.-copy: esto nos duplicará nuestros archivos originales a una carpeta destino de trabajo, por ejemplo
+        si estamos trabajando con una memoria extraible, los datos de esa memoria que estemos ocupando
+        se copiara de forma correcta sin inperfecciones en los archivos en una carpeta preestablecida y en
+        Preset: copy with MDS Verification tambien primary destination debo asegurarme en que ruta quiero 
+        la copia de mis archivos 
+   2.2.-Transcode: aqui decimos que no necesitamos el archivo original si no que quiero hacer una transcodificacion a otro
+                   formato que más nos convenga para trabajar en premier pro 
+   2.3.-Crear proxys:son archivos que permiten archivos mas pequeños de los que realmente son si el video  
+                     está en 4K podemos bajar su tamaño (calidad)
+   2.4.-Copy and create proxys: Crear proxys y copiar los archivos originales 
+        trabajar con proxys basicamente es trabajar con un video en baja calidad para poder trabajar de manera fluida 
+        pero a la hora de exportacion cambiar a un video de la más alta calidad  
+
+3.-Media bowser podemos navegar por los archivos podemos aplicar la ingesta, verificamos la ingesta con una palomita en
+   el cuadro con la llave podemos ir a la configuracion de la ingesta 
+
+4.-para hacer la ingesta seleccionamos los archivos y con el clic derecho le damos en importar y se aplicará la ingesta
+
+usando la ingesta en copy:
+esta accion nos abre adobe encoder el cual nos ayudará a recorrer bit a bit los archivos verificando que no haya errores
+y así copiarlos a una nueva posición. 
+
+
+casis siempre usarmos copy and create proxys
+
+--------------------------------------------Usar proxys----------------------------------------------   
+
+1.-cambiamos la ingesta a copy *  and create proxys
+2.-en primary destination seleccionamopsla carpeta en la que se guardarán los archivos cuando inicie la ingesta para copy
+3.-seleccionamos la carpeta en donde se guardaran los videos en más baja calidad (proxys)
+4.-seleccionamos los archivos a ingestar que son HD 
+5.-Le damos importar con el clic derecho.
+  
+   mandará los videos a adobe encoder  y los archivos ya estarán en el area de trabajo.
+   estaremos en el area de trabajo con los archivos de copya HD sin embargo aun no estamos trabajando con los proxys 
+6.-en la pestaña de datos de los archivos damos clic derecho y y abrimos la ventana de metadata display y seleccionamos en el
+   buscador "proxys" y de esa manera sabremos si tenemos disponibles los prowys o no, tiene que decir "attached"
+   para saber que lo tenemos disponible. 
+7.-Vamos al panel del proyecto, que es el cuadro de trabajo superior derecho y le damos en el signo + tons le damos
+   en los dos cuadraditos que hacen una señal de intercambio y le damos ok. este simbolo nos ayudará a cambiar entre
+   los archivos en proxys y en HD.      
+
+----------------------------------new sequence--------------------------------------------
+
+
+en la parte de abajo en el icono alado del icono de carpeta, el que parece un posttick 
+le damos clic y le damos en secuencia, ahi podremos ver los formatos de video con los que podremos trabajar.
+investigar formatos de video 
+-creamos una secuencia arrastrando un archivo de video al simbolo de postick
+-Una secuencia es la cantidad de timelines que tengo para editar 
+-Como editar una secuencia ya previamente establecida (calidad de video)?
+ seleccionamos la secuencia que queremos editar y vamos al menú de la parte superior y damos clic en secuencia 
+ damos clic en sequence settings, se abre una ventana en donde podemos personalizar una secuencia ya establecida.
+1.-en Editing mode le damos clic y escogemos la opcion de custom, esto nos dejará editar el ancho y el alto del cuadrod de video 
+   -el formato full HD es: 1980 * 1080
+-escogemos un pixel cuadrado (1.0)
+-no necesitamos campo y con escaneo progresivo
+
+
+
+"""""El cine trabaja a 24 frames por segundo"""""
+"""""La television trabaja a 30 frames por segundo""""""
+
+
+                                        Secuencia y clip de diferente tamaño
+
+
+si ya tenemos establecido el tamaño de escala de una secuencia y queremos poner un clip con diferente tamaño 
+nos aparecera un recuadro con dos opciones:
+1.-nos preguntará si queremos adaptar la secuencia al clip que queremos insertar
+2.-nos preguntará si queremos ignorar los tmaños tanto de la secuencia como el del clip y simplemente lo insertamos
+   con esto se veran las diferencias de ambas escalas.
+3.-podemos elegir la opcion dos, que por lo general es la que viene remarcada y despues seleccionamos el clip y le damos
+clic derecho y escogemos la opcion "Escale to frame  size" el cual nos escalará el tamaño del nuevo clip al tamaño de la
+secuencia. Tener cuidado que se crea un pixeleado.
+
+
+
+                                              Secuencias anidadas 
+
+
+Secuencias insertadas dentro de otras secuencias. No afuerzas deben tener las mismas carcaterísticas.
+cambia de color con respecto a la primera secuencia.
+seleccionando varios clips y presionando clic derecho elegimos la opcion "nest" esto nos unificara los clips en uno
+solo creando una secuencia, sin embargo si presionamos ese nuevo clip veremos los clips por separado de nuevo,
+es como un objeto inteligente en photoshop.
+
+
+                                            Secuencias de otros proyectos
+Podemos importar otras secuencias solo seccionando el proyectyo adobe premier que queramos e importarlo a la sesion de trabajo actual
+la sesion de trabajo nos preguntará si queremos importar todo el proyecto o solo las secuencias. le podemos decir que solo las secuencias 
+o especificar secuencias y que todo nos lo guarde en una carpeta 
+
+
+
+-------------------------------------------teclas rapidas importantes en video--------------------------------------
+J = play en tretroceso 
+L = play 
+k= pause 
+
+si quiero que el play vaya al doble o triple de velocidad debo presionar la tecla dos o tres veces respectivamente
+
+i = mark in
+o = mark out  
+
+, = insert 
+. = over out o sobre escribir
